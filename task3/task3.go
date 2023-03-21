@@ -1,10 +1,13 @@
 package task3
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // Будем считать квадраты в одельных горутинах. По готовности результаты будут прибавляться к значению в главной горутине.
 
 func Squared(num int) int {
+	fmt.Println(num * num)
 	return num * num
 }
 

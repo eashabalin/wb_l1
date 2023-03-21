@@ -32,16 +32,16 @@ func Run() {
 	fmt.Println("Channel:")
 
 	// Буферизированный канал эффективнее в данном случае, так как он не блокирует выполнение горутин пока не заполнится
-	ch := make(chan bool, len(nums))
+	done := make(chan bool, len(nums))
 
 	for _, num := range nums {
 		go func(num int) {
 			PrintSquared(num)
-			ch <- true
+			done <- true
 		}(num)
 	}
 
 	for range nums {
-		<-ch
+		<-done
 	}
 }
