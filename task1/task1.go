@@ -48,6 +48,8 @@ func (a *Action) Say(smth string) {
 }
 
 func Run() {
+	fmt.Println("--- Task 1 ---")
+
 	human := NewHuman("Egor", 21, Male)
 	action := NewAction(*human)
 	action.Say("Hello!")
