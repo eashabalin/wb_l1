@@ -1,6 +1,6 @@
 package main
 
-import "wb_l1/task24"
+import "wb_l1/task26"
 
 func main() {
 	//task1.Run()
@@ -25,5 +25,7 @@ func main() {
 	//task21.Run()
 	//task22.Run()
 	//task23.Run()
-	task24.Run()
+	//task24.Run()
+	//task25.Run()
+	task26.Run()
 }
